@@ -12,19 +12,19 @@ sort($numeros);
 for ($i=0; $i < 20; $i++) {
   //dar color al primero y ultimo
   if ($i == 0) {
-    echo "<p style='color: blue'>";
+    echo "<span style='color: blue'>";
   } elseif ($i == 19) {
-    echo "<p style='color: green'>";
+    echo "<span style='color: green'>";
   }
   //echo principal
   echo $numeros[$i] . " ";
   $suma = $suma + $numeros[$i];
 
   if ($i == 0 || $i == 19) {
-    echo "</p>";
+    echo "</span>";
   }
 }
 
-echo "Suma de los numeros: " . $suma . " Media: " . $suma/20;
+echo "<br> Suma de los numeros: " . $suma . "<br> Media: " . $suma/20;
 
 ?>
