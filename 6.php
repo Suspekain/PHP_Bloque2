@@ -1,5 +1,3 @@
-
-
 <?php
 $meses = (
   $enero = array(),
